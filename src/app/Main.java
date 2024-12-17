@@ -21,17 +21,18 @@ public class Main {
 
         if (revenue < 1000) {
             //2.5% ставка
-            tax = revenue * 0.025;
+            tax = revenue * 2.5;
         }
         else if (revenue <= 25000) {
             // 4.3% ставка
-            tax = revenue * 0.043;
+            tax = revenue * 4.3;
         }
         else {
             // 6,7% ставка
-            tax = revenue * 0.067;
+            tax = revenue * 6.7;
         }
-        System.out.println("The tax amount is: " + tax);
+        System.out.printf("The tax amount is: %.2f%n", tax);
+
 
         // закриваємо сканер
         sc.close();
